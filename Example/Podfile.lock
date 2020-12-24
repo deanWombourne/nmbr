@@ -1,0 +1,16 @@
+PODS:
+  - nmbr (0.1.0)
+
+DEPENDENCIES:
+  - nmbr (from `../`)
+
+EXTERNAL SOURCES:
+  nmbr:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  nmbr: 4998053ebdedb437dee34a498198c2b9a3e08a93
+
+PODFILE CHECKSUM: bd59627ba09f2f9036a3243cf93a2f82789994f3
+
+COCOAPODS: 1.10.0

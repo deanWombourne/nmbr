@@ -1,0 +1,22 @@
+{
+  "name": "nmbr",
+  "version": "0.1.0",
+  "summary": "A short description of nmbr.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/deanWombourne/nmbr",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "deanWombourne": "deanWombourne@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/deanWombourne/nmbr.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "nmbr/Classes/**/*"
+}
