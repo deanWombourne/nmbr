@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		21852CECF9FB6EE99BB78C80 /* Pods-nmbr_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Example.debug.xcconfig"; path = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		272C56D520036FA222F6E2F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3A33888B4ADC7E7CC332158F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		272C56D520036FA222F6E2F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3A33888B4ADC7E7CC332158F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* nmbr_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nmbr_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +44,10 @@
 		7794ACB4119B9531C56D2923 /* Pods-nmbr_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Example.release.xcconfig"; path = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8CDD39B7DCDBD135E2E5CF2B /* Pods_nmbr_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		990B945AF5BF6B598D180F61 /* Pods-nmbr_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Tests.debug.xcconfig"; path = "Target Support Files/Pods-nmbr_Tests/Pods-nmbr_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A06E2F812594CEC5002F53E5 /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		DAC1A0F65B1964467F18BC59 /* Pods-nmbr_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Tests.release.xcconfig"; path = "Target Support Files/Pods-nmbr_Tests/Pods-nmbr_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E777A29CEBD3CD0E4D6F0C11 /* Pods_nmbr_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA7DBFA98DA4499D3D792C26 /* nmbr.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = nmbr.podspec; path = ../nmbr.podspec; sourceTree = "<group>"; };
+		EA7DBFA98DA4499D3D792C26 /* nmbr.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = nmbr.podspec; path = ../nmbr.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +73,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACF51AFB993E008FA782 /* Metadata */,
 				607FACD21AFB9204008FA782 /* Example for nmbr */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -129,14 +130,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		607FACF51AFB993E008FA782 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				A06E2F812594CEC5002F53E5 /* swiftlint.yml */,
 				EA7DBFA98DA4499D3D792C26 /* nmbr.podspec */,
 				272C56D520036FA222F6E2F6 /* README.md */,
 				3A33888B4ADC7E7CC332158F /* LICENSE */,
 			);
-			name = "Podspec Metadata";
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 		81D9A91BD5A170A9BE022CAD /* Frameworks */ = {
@@ -156,7 +158,6 @@
 				990B945AF5BF6B598D180F61 /* Pods-nmbr_Tests.debug.xcconfig */,
 				DAC1A0F65B1964467F18BC59 /* Pods-nmbr_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +173,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				AEC63348AB89E1073D3ECF88 /* [CP] Embed Pods Frameworks */,
+				A06E2F7C2594CE5E002F53E5 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -213,6 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = M824GG4658;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +230,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -305,6 +309,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A06E2F7C2594CE5E002F53E5 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftLint/swiftlint --config swiftlint.yml --path .\n";
 		};
 		AEC63348AB89E1073D3ECF88 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -478,6 +500,7 @@
 			baseConfigurationReference = 21852CECF9FB6EE99BB78C80 /* Pods-nmbr_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M824GG4658;
 				INFOPLIST_FILE = nmbr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +516,7 @@
 			baseConfigurationReference = 7794ACB4119B9531C56D2923 /* Pods-nmbr_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M824GG4658;
 				INFOPLIST_FILE = nmbr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

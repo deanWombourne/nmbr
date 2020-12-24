@@ -1,8 +1,14 @@
 PODS:
   - nmbr (0.1.0)
+  - SwiftLint (0.41.0)
 
 DEPENDENCIES:
   - nmbr (from `../`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   nmbr:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   nmbr: 4998053ebdedb437dee34a498198c2b9a3e08a93
+  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
 
-PODFILE CHECKSUM: bd59627ba09f2f9036a3243cf93a2f82789994f3
+PODFILE CHECKSUM: dec6c3c16dedd07b6ec3e65af7663bc3f6d2bf33
 
 COCOAPODS: 1.10.0
