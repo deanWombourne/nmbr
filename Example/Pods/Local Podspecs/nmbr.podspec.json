@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "nmbr/Classes/**/*"
+  "source_files": "nmbr/Classes/**/*",
+  "resource_bundles": {
+    "nmbr": [
+      "nmbr/Assets/*.stringsdict"
+    ]
+  }
 }
