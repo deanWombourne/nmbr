@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'deanWombourne' => 'deanWombourne@gmail.com' }
-  s.source           = { :git => 'https://github.com/deanWombourne/nmbr.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/deanWombourne/nmbr.git', :tag => "v"+s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.swift_versions = [ '4.0', '4.2', '5.0' ]
