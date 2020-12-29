@@ -15,119 +15,124 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		0DB61087C92214C44BFA1A7D1389F1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0EE80E2B90BB13F358DE02A709FDB37F /* nmbr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF9E715B28373663E51B1B76A172D33 /* nmbr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2420A5A2E1EDC813062BB1085D0F676B /* Pods-nmbr_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2D4B97DD99923ABF2ACE0F8C59757B /* Pods-nmbr_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43D45A58549CBFBCCA95C4665AB17A84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5660474820B08B0E73253DEC335BEE81 /* Locale+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB926606EBC432C5E3D492F8831F3C /* Locale+helpers.swift */; };
+		44C3BE11724867F0E938A3F11A9050E3 /* nmbr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C990D79C0AFCED82CCC45379221737B /* nmbr-dummy.m */; };
+		49D2B4AE00CEE9672549BAFEDB04391E /* NMBRFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4AC8F381104D82F3CC69D565C7A421 /* NMBRFormatter.swift */; };
 		5B637755B278E5E18F6E719AE5576F6C /* Pods-nmbr_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B58AA2BEDC37E230AC5C7BDF1E5CAFB8 /* Pods-nmbr_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1305EC26E492F6AA1CC7D5554DDE49 /* nmbr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DB8057F052B24B9B0F7C128BBB7194 /* nmbr-dummy.m */; };
-		A6828053415A7F2D4AFBAD6C4CC01E59 /* NMBR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC08471C87577F42B8C43F982D7578 /* NMBR.swift */; };
+		5F451BB69A222A086E94C7FB0C93F821 /* Locale+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188295C4611E89C25E4110A25E8D954 /* Locale+helpers.swift */; };
+		62BCD95709D65165EE3AF815D4FB06EA /* Bundle+nmbr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7053D774A05775C5C5ADD4480440B1 /* Bundle+nmbr.swift */; };
+		8C7465F67C0C1C1164C79462DBFF19C9 /* localisations.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F157BE141C26F2322EE8FA3E04DE6983 /* localisations.stringsdict */; };
+		A081D06A259B87010035A57B /* String+trimTrailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D069259B87010035A57B /* String+trimTrailing.swift */; };
 		AED58C26119EA113962EA38D5B873605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B5528A20391225F73341B5BDB65CAA9F /* localisations.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE81556B5DC485382A46B36B0699D1 /* localisations.stringsdict */; };
-		C296773B0CE915CA8E107A9C3B936710 /* nmbr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D335DCF59425994E4E913DFABD5390AD /* nmbr.bundle */; };
+		B7D5C21086E76A21B16076C93DA95D70 /* nmbr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D335DCF59425994E4E913DFABD5390AD /* nmbr.bundle */; };
 		CBA5E09570C972B316E87FE2FC1EDFF4 /* Pods-nmbr_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 871F9AB95D8AD6A16D35932A2D0264CB /* Pods-nmbr_Example-dummy.m */; };
-		EBCE4BA8CB89F8AE6DB5E4A60FEFBEFE /* nmbr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 879577D0DF1C9D286E3B452460E541BC /* nmbr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC3C04737B5426A6283720909DB2D041 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F0608E7C5B20173AD19F299097019B85 /* Pods-nmbr_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E02E113FE86EB5BB8DFF8B4D00CC2C /* Pods-nmbr_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D01BF7B6E477998E6B91E74A9606101 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61B1FFDECA0ACFABC03F912D1317C81D;
-			remoteInfo = "Pods-nmbr_Example";
-		};
-		CB8F97CF5CCE04F9FAD81C6BB2CEB947 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
-		};
-		D8E666CEE7B554BC160A10C05647D5E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D2745B6B1AEBB99709741A1FA373502;
-			remoteInfo = "nmbr-nmbr";
-		};
-		EACDEC657AD13AEA4230D0DF1C0140C4 /* PBXContainerItemProxy */ = {
+		10129E156313404CD055AF09EBA3FEDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B1599CED14C5EE3FBDF2A9714487BBAB;
 			remoteInfo = nmbr;
 		};
+		993134F5800102F0BCA8E85C79C44C61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D2745B6B1AEBB99709741A1FA373502;
+			remoteInfo = "nmbr-nmbr";
+		};
+		9D0A90B382E00EC36125DC00A097B1F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61B1FFDECA0ACFABC03F912D1317C81D;
+			remoteInfo = "Pods-nmbr_Example";
+		};
+		E145B8837313255AB3C5E75FEB98CAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B6D1C74B2E1950377F3146500AEBA9 /* nmbr.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = nmbr.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		09DB8057F052B24B9B0F7C128BBB7194 /* nmbr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nmbr-dummy.m"; sourceTree = "<group>"; };
-		11BAC85234D6566FF3B8E34BB9624267 /* nmbr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nmbr.debug.xcconfig; sourceTree = "<group>"; };
+		0B4AC8F381104D82F3CC69D565C7A421 /* NMBRFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBRFormatter.swift; path = nmbr/Classes/NMBRFormatter.swift; sourceTree = "<group>"; };
+		0D5618C050D003CCBCD9A8AB8950C2BA /* nmbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nmbr.release.xcconfig; sourceTree = "<group>"; };
+		0F7053D774A05775C5C5ADD4480440B1 /* Bundle+nmbr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+nmbr.swift"; path = "nmbr/Classes/Bundle+nmbr.swift"; sourceTree = "<group>"; };
 		13533710C84BEF8A9D81942EA1A03918 /* Pods-nmbr_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nmbr_Tests.modulemap"; sourceTree = "<group>"; };
-		2218BB460D1F70F9F871990ED6674788 /* nmbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nmbr.release.xcconfig; sourceTree = "<group>"; };
-		25B90A5A187249C2C0CAA9C7D7BD84D2 /* nmbr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nmbr-prefix.pch"; sourceTree = "<group>"; };
-		279D3A024FA482065FF25F48B1F74150 /* nmbr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "nmbr-Info.plist"; sourceTree = "<group>"; };
+		2C990D79C0AFCED82CCC45379221737B /* nmbr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nmbr-dummy.m"; sourceTree = "<group>"; };
 		2D2D4B97DD99923ABF2ACE0F8C59757B /* Pods-nmbr_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nmbr_Example-umbrella.h"; sourceTree = "<group>"; };
 		36D640583343508416603A40DB5ADE8E /* Pods-nmbr_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmbr_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3A01B1FD747081125C6A730E2C80607D /* Pods-nmbr_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmbr_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		4D06F8EFEE2A5A5A685F6938F39E20EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		463481E829346FCB23E510F73DFA8263 /* ResourceBundle-nmbr-nmbr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-nmbr-nmbr-Info.plist"; sourceTree = "<group>"; };
 		52B19A988FF60C7F91077468622AE172 /* Pods-nmbr_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nmbr_Example.modulemap"; sourceTree = "<group>"; };
 		56FF133432DD687913E306DC18CF0491 /* Pods-nmbr_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nmbr_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5852EF8E30D18AC5F32EC43C71891D45 /* Pods-nmbr_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nmbr_Tests-Info.plist"; sourceTree = "<group>"; };
-		5CFE81556B5DC485382A46B36B0699D1 /* localisations.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = localisations.stringsdict; path = nmbr/Assets/localisations.stringsdict; sourceTree = "<group>"; };
+		5865B8E1884C4231EC588B0F69514D12 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5BB42EDFA92AB130E59C6B5E09E4F269 /* nmbr.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = nmbr.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5EF9E715B28373663E51B1B76A172D33 /* nmbr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nmbr-umbrella.h"; sourceTree = "<group>"; };
 		64700D5791E225937F39E05393A7B5F2 /* Pods-nmbr_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nmbr_Example-Info.plist"; sourceTree = "<group>"; };
-		6FBB926606EBC432C5E3D492F8831F3C /* Locale+helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Locale+helpers.swift"; path = "nmbr/Classes/Locale+helpers.swift"; sourceTree = "<group>"; };
-		70A81DFA73F7BF198A504AF9778958A2 /* Pods_nmbr_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nmbr_Tests.framework; path = "Pods-nmbr_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A81DFA73F7BF198A504AF9778958A2 /* Pods_nmbr_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7983273950682D93BE2D86C6AE22DA42 /* nmbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nmbr.framework; path = nmbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		765A9C7D029986A54230D673523D445A /* nmbr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nmbr.debug.xcconfig; sourceTree = "<group>"; };
+		7983273950682D93BE2D86C6AE22DA42 /* nmbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nmbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		871F9AB95D8AD6A16D35932A2D0264CB /* Pods-nmbr_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nmbr_Example-dummy.m"; sourceTree = "<group>"; };
-		879577D0DF1C9D286E3B452460E541BC /* nmbr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nmbr-umbrella.h"; sourceTree = "<group>"; };
-		88FC08471C87577F42B8C43F982D7578 /* NMBR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBR.swift; path = nmbr/Classes/NMBR.swift; sourceTree = "<group>"; };
 		903F22D05629D6CB825460F3BAAB09EA /* Pods-nmbr_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nmbr_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		915ADDF46893AB88FBE95AC5E09ED947 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A081D069259B87010035A57B /* String+trimTrailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+trimTrailing.swift"; path = "nmbr/Classes/String+trimTrailing.swift"; sourceTree = "<group>"; };
+		A188295C4611E89C25E4110A25E8D954 /* Locale+helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Locale+helpers.swift"; path = "nmbr/Classes/Locale+helpers.swift"; sourceTree = "<group>"; };
 		AF926468866127F65DD6254BDF6BE2D7 /* Pods-nmbr_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nmbr_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B58AA2BEDC37E230AC5C7BDF1E5CAFB8 /* Pods-nmbr_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nmbr_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B9979CDD5951766C40AE8D59035048B7 /* Pods_nmbr_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nmbr_Example.framework; path = "Pods-nmbr_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9979CDD5951766C40AE8D59035048B7 /* Pods_nmbr_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA75493535EDBFFDFBCB937820540296 /* Pods-nmbr_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nmbr_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D335DCF59425994E4E913DFABD5390AD /* nmbr.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = nmbr.bundle; path = "nmbr-nmbr.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28021E484F5CB5460DB9C635BC8D7A9 /* nmbr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "nmbr-Info.plist"; sourceTree = "<group>"; };
+		C3D4011C05357C6A4AEC9ADA1BCA7558 /* nmbr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nmbr.modulemap; sourceTree = "<group>"; };
+		D335DCF59425994E4E913DFABD5390AD /* nmbr.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nmbr.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F5D3DD24C3325DE86C075363BF7E0E /* Pods-nmbr_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nmbr_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DA2D08F144AA07237DD1A31BC4992AF8 /* nmbr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nmbr.modulemap; sourceTree = "<group>"; };
+		DA1A82BE16D5C6A5391D829C5FFB9266 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DB366B16E798E49836A2C68B6ED71696 /* nmbr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nmbr-prefix.pch"; sourceTree = "<group>"; };
 		E9E02E113FE86EB5BB8DFF8B4D00CC2C /* Pods-nmbr_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nmbr_Tests-dummy.m"; sourceTree = "<group>"; };
+		F157BE141C26F2322EE8FA3E04DE6983 /* localisations.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = localisations.stringsdict; path = nmbr/Assets/en.lproj/localisations.stringsdict; sourceTree = "<group>"; };
 		F9C50CE3293AF857297985DCD2AF897B /* Pods-nmbr_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmbr_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FE8BE2D63E9EDC58CEBDE0D250E8C9D0 /* ResourceBundle-nmbr-nmbr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-nmbr-nmbr-Info.plist"; sourceTree = "<group>"; };
 		FEA409B69706D1A0913556A3743D099E /* Pods-nmbr_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmbr_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4217E497C246D9CAE59A5382998FF7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1F8388879C79DAC2C1CCE1FA39DFC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3C04737B5426A6283720909DB2D041 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7665602822EC3D8542E443BE3366B362 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AED58C26119EA113962EA38D5B873605 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		776116CDFCDF9037C080E7F070983AA9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD58A5690794BBA1B436B406DA54BBA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43D45A58549CBFBCCA95C4665AB17A84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,20 +147,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DFD6C95D0DF78DD5ECFF984786C1289 /* Support Files */ = {
+		14E49044D1523D77F8FBA0F2D58530DB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DA2D08F144AA07237DD1A31BC4992AF8 /* nmbr.modulemap */,
-				09DB8057F052B24B9B0F7C128BBB7194 /* nmbr-dummy.m */,
-				279D3A024FA482065FF25F48B1F74150 /* nmbr-Info.plist */,
-				25B90A5A187249C2C0CAA9C7D7BD84D2 /* nmbr-prefix.pch */,
-				879577D0DF1C9D286E3B452460E541BC /* nmbr-umbrella.h */,
-				11BAC85234D6566FF3B8E34BB9624267 /* nmbr.debug.xcconfig */,
-				2218BB460D1F70F9F871990ED6674788 /* nmbr.release.xcconfig */,
-				FE8BE2D63E9EDC58CEBDE0D250E8C9D0 /* ResourceBundle-nmbr-nmbr-Info.plist */,
+				EECFC53B467C9F34AECD484A311F9DEF /* nmbr */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/nmbr";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		23FE52135DBCF760FF457766E2A657B2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DA1A82BE16D5C6A5391D829C5FFB9266 /* LICENSE */,
+				5BB42EDFA92AB130E59C6B5E09E4F269 /* nmbr.podspec */,
+				5865B8E1884C4231EC588B0F69514D12 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		469ECCC1CBD88EFED500593FB122303A /* Targets Support Files */ = {
@@ -208,6 +215,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		6DF197C0E8DA39C6EC685D4F4FF33B06 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3D4011C05357C6A4AEC9ADA1BCA7558 /* nmbr.modulemap */,
+				2C990D79C0AFCED82CCC45379221737B /* nmbr-dummy.m */,
+				C28021E484F5CB5460DB9C635BC8D7A9 /* nmbr-Info.plist */,
+				DB366B16E798E49836A2C68B6ED71696 /* nmbr-prefix.pch */,
+				5EF9E715B28373663E51B1B76A172D33 /* nmbr-umbrella.h */,
+				765A9C7D029986A54230D673523D445A /* nmbr.debug.xcconfig */,
+				0D5618C050D003CCBCD9A8AB8950C2BA /* nmbr.release.xcconfig */,
+				463481E829346FCB23E510F73DFA8263 /* ResourceBundle-nmbr-nmbr-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/nmbr";
+			sourceTree = "<group>";
+		};
 		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,14 +241,6 @@
 			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
-		8AD0E0DDDF299A89C04B91D472F749DE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DCC5E559C4C3A4F6E3C8843D960EED6F /* nmbr */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,21 +249,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9FA82DCB1F0710BCA6DEFDAC2F0D498D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				915ADDF46893AB88FBE95AC5E09ED947 /* LICENSE */,
-				03B6D1C74B2E1950377F3146500AEBA9 /* nmbr.podspec */,
-				4D06F8EFEE2A5A5A685F6938F39E20EF /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8AD0E0DDDF299A89C04B91D472F749DE /* Development Pods */,
+				14E49044D1523D77F8FBA0F2D58530DB /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				965877409E01FB3D85D85E90E6B30185 /* Pods */,
 				E74A4D5AC94E64F2B5E63E5E0C912658 /* Products */,
@@ -269,21 +274,7 @@
 			children = (
 				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		DCC5E559C4C3A4F6E3C8843D960EED6F /* nmbr */ = {
-			isa = PBXGroup;
-			children = (
-				6FBB926606EBC432C5E3D492F8831F3C /* Locale+helpers.swift */,
-				5CFE81556B5DC485382A46B36B0699D1 /* localisations.stringsdict */,
-				88FC08471C87577F42B8C43F982D7578 /* NMBR.swift */,
-				9FA82DCB1F0710BCA6DEFDAC2F0D498D /* Pod */,
-				1DFD6C95D0DF78DD5ECFF984786C1289 /* Support Files */,
-			);
-			name = nmbr;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		E74A4D5AC94E64F2B5E63E5E0C912658 /* Products */ = {
@@ -297,14 +288,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EECFC53B467C9F34AECD484A311F9DEF /* nmbr */ = {
+			isa = PBXGroup;
+			children = (
+				0F7053D774A05775C5C5ADD4480440B1 /* Bundle+nmbr.swift */,
+				A188295C4611E89C25E4110A25E8D954 /* Locale+helpers.swift */,
+				F157BE141C26F2322EE8FA3E04DE6983 /* localisations.stringsdict */,
+				0B4AC8F381104D82F3CC69D565C7A421 /* NMBRFormatter.swift */,
+				A081D069259B87010035A57B /* String+trimTrailing.swift */,
+				23FE52135DBCF760FF457766E2A657B2 /* Pod */,
+				6DF197C0E8DA39C6EC685D4F4FF33B06 /* Support Files */,
+			);
+			name = nmbr;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9BE3275773B910E62B43C9B466239C0A /* Headers */ = {
+		470C6A430174FA9801455D79537E324E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCE4BA8CB89F8AE6DB5E4A60FEFBEFE /* nmbr-umbrella.h in Headers */,
+				0EE80E2B90BB13F358DE02A709FDB37F /* nmbr-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +345,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				702A99CFA9F7CFCCCC3EE5CD8116D7A0 /* PBXTargetDependency */,
-				1B11B56AB4907F5807486AD3B3581407 /* PBXTargetDependency */,
+				C5DEB6427E6C3BC2EC1D5D8514EF4C46 /* PBXTargetDependency */,
+				AD7C9A4D092445CD4A0943F75B888FDB /* PBXTargetDependency */,
 			);
 			name = "Pods-nmbr_Example";
 			productName = "Pods-nmbr_Example";
@@ -349,11 +355,11 @@
 		};
 		9D2745B6B1AEBB99709741A1FA373502 /* nmbr-nmbr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 405C4B87A06DA79C1792AE797F51C8B2 /* Build configuration list for PBXNativeTarget "nmbr-nmbr" */;
+			buildConfigurationList = 024EC3FB590C67352CDD5026049025C8 /* Build configuration list for PBXNativeTarget "nmbr-nmbr" */;
 			buildPhases = (
-				9B87D4E5F65950D814E2B290592D26C1 /* Sources */,
-				776116CDFCDF9037C080E7F070983AA9 /* Frameworks */,
-				AECDA153CB7340F772B5B411D72E9F83 /* Resources */,
+				2F4580A5B6EAAB59D96ABD62B6A2C974 /* Sources */,
+				4217E497C246D9CAE59A5382998FF7FA /* Frameworks */,
+				152D4322114055CBD7D8D603C9AC5F5F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -366,17 +372,17 @@
 		};
 		B1599CED14C5EE3FBDF2A9714487BBAB /* nmbr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3FDB057DA2E1ADE856ED9A145B3705E /* Build configuration list for PBXNativeTarget "nmbr" */;
+			buildConfigurationList = 7C0A1D1E89747DD2A81504B3AE970D49 /* Build configuration list for PBXNativeTarget "nmbr" */;
 			buildPhases = (
-				9BE3275773B910E62B43C9B466239C0A /* Headers */,
-				7E9B1A2897080AB3221B8F9590611F4E /* Sources */,
-				DD58A5690794BBA1B436B406DA54BBA6 /* Frameworks */,
-				E86448185A02DC86EDA434E7D99E742A /* Resources */,
+				470C6A430174FA9801455D79537E324E /* Headers */,
+				E8C781F90D0D63F4E76253B141F21262 /* Sources */,
+				4E1F8388879C79DAC2C1CCE1FA39DFC7 /* Frameworks */,
+				904AF449EF8B3079D55FA4AD772AFBDD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B879213C99D6EC3B485B8AC84CD1BCA0 /* PBXTargetDependency */,
+				D6BE13B4C165856ACF0EC1EC214F61FB /* PBXTargetDependency */,
 			);
 			name = nmbr;
 			productName = nmbr;
@@ -395,7 +401,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FDEE0AFB825BA2472D546FDA2BC5ADD8 /* PBXTargetDependency */,
+				22A8ADD2D44F4B7137847E441D0BD4CD /* PBXTargetDependency */,
 			);
 			name = "Pods-nmbr_Tests";
 			productName = "Pods-nmbr_Tests";
@@ -434,6 +440,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		152D4322114055CBD7D8D603C9AC5F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7465F67C0C1C1164C79462DBFF19C9 /* localisations.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		516C6EFBD8B9BE37FE8638446CCF7072 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,11 +455,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AECDA153CB7340F772B5B411D72E9F83 /* Resources */ = {
+		904AF449EF8B3079D55FA4AD772AFBDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5528A20391225F73341B5BDB65CAA9F /* localisations.stringsdict in Resources */,
+				B7D5C21086E76A21B16076C93DA95D70 /* nmbr.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,32 +470,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E86448185A02DC86EDA434E7D99E742A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C296773B0CE915CA8E107A9C3B936710 /* nmbr.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F4580A5B6EAAB59D96ABD62B6A2C974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56B552380A99536C2077E3E7BEB29A6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CBA5E09570C972B316E87FE2FC1EDFF4 /* Pods-nmbr_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E9B1A2897080AB3221B8F9590611F4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5660474820B08B0E73253DEC335BEE81 /* Locale+helpers.swift in Sources */,
-				7B1305EC26E492F6AA1CC7D5554DDE49 /* nmbr-dummy.m in Sources */,
-				A6828053415A7F2D4AFBAD6C4CC01E59 /* NMBR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,74 +496,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B87D4E5F65950D814E2B290592D26C1 /* Sources */ = {
+		E8C781F90D0D63F4E76253B141F21262 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BCD95709D65165EE3AF815D4FB06EA /* Bundle+nmbr.swift in Sources */,
+				A081D06A259B87010035A57B /* String+trimTrailing.swift in Sources */,
+				5F451BB69A222A086E94C7FB0C93F821 /* Locale+helpers.swift in Sources */,
+				44C3BE11724867F0E938A3F11A9050E3 /* nmbr-dummy.m in Sources */,
+				49D2B4AE00CEE9672549BAFEDB04391E /* NMBRFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1B11B56AB4907F5807486AD3B3581407 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = nmbr;
-			target = B1599CED14C5EE3FBDF2A9714487BBAB /* nmbr */;
-			targetProxy = EACDEC657AD13AEA4230D0DF1C0140C4 /* PBXContainerItemProxy */;
-		};
-		702A99CFA9F7CFCCCC3EE5CD8116D7A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = CB8F97CF5CCE04F9FAD81C6BB2CEB947 /* PBXContainerItemProxy */;
-		};
-		B879213C99D6EC3B485B8AC84CD1BCA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "nmbr-nmbr";
-			target = 9D2745B6B1AEBB99709741A1FA373502 /* nmbr-nmbr */;
-			targetProxy = D8E666CEE7B554BC160A10C05647D5E9 /* PBXContainerItemProxy */;
-		};
-		FDEE0AFB825BA2472D546FDA2BC5ADD8 /* PBXTargetDependency */ = {
+		22A8ADD2D44F4B7137847E441D0BD4CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-nmbr_Example";
 			target = 61B1FFDECA0ACFABC03F912D1317C81D /* Pods-nmbr_Example */;
-			targetProxy = 5D01BF7B6E477998E6B91E74A9606101 /* PBXContainerItemProxy */;
+			targetProxy = 9D0A90B382E00EC36125DC00A097B1F4 /* PBXContainerItemProxy */;
+		};
+		AD7C9A4D092445CD4A0943F75B888FDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nmbr;
+			target = B1599CED14C5EE3FBDF2A9714487BBAB /* nmbr */;
+			targetProxy = 10129E156313404CD055AF09EBA3FEDB /* PBXContainerItemProxy */;
+		};
+		C5DEB6427E6C3BC2EC1D5D8514EF4C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = E145B8837313255AB3C5E75FEB98CAB9 /* PBXContainerItemProxy */;
+		};
+		D6BE13B4C165856ACF0EC1EC214F61FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "nmbr-nmbr";
+			target = 9D2745B6B1AEBB99709741A1FA373502 /* nmbr-nmbr */;
+			targetProxy = 993134F5800102F0BCA8E85C79C44C61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04C129A63107A45DDB901073A7AE7E44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11BAC85234D6566FF3B8E34BB9624267 /* nmbr.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nmbr/nmbr-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nmbr/nmbr-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/nmbr/nmbr.modulemap";
-				PRODUCT_MODULE_NAME = nmbr;
-				PRODUCT_NAME = nmbr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1142ADE4D1C1D7BB480A75E830E1B782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEA409B69706D1A0913556A3743D099E /* Pods-nmbr_Tests.debug.xcconfig */;
@@ -711,9 +688,9 @@
 			};
 			name = Release;
 		};
-		5F30EB1EB9883FC1D1F24749E4C7D2C6 /* Debug */ = {
+		557451E22EE63532094486D3A7774709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11BAC85234D6566FF3B8E34BB9624267 /* nmbr.debug.xcconfig */;
+			baseConfigurationReference = 765A9C7D029986A54230D673523D445A /* nmbr.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
 				IBSC_MODULE = nmbr;
@@ -726,6 +703,54 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
+		};
+		58FF495675CC1AE31626F3A2A761BC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5618C050D003CCBCD9A8AB8950C2BA /* nmbr.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
+				IBSC_MODULE = nmbr;
+				INFOPLIST_FILE = "Target Support Files/nmbr/ResourceBundle-nmbr-nmbr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = nmbr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		60951D1AC01B040F58009BD743B372EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5618C050D003CCBCD9A8AB8950C2BA /* nmbr.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nmbr/nmbr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nmbr/nmbr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nmbr/nmbr.modulemap";
+				PRODUCT_MODULE_NAME = nmbr;
+				PRODUCT_NAME = nmbr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -782,8 +807,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -872,9 +896,9 @@
 			};
 			name = Debug;
 		};
-		A695A35F100DF206A73BD1591E1D2963 /* Release */ = {
+		DE11B0FF8ABDD556B56C427AEFFEB013 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2218BB460D1F70F9F871990ED6674788 /* nmbr.release.xcconfig */;
+			baseConfigurationReference = 765A9C7D029986A54230D673523D445A /* nmbr.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -896,33 +920,25 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		B959B8D46DCDEDEC2FE875113795E7D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2218BB460D1F70F9F871990ED6674788 /* nmbr.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
-				IBSC_MODULE = nmbr;
-				INFOPLIST_FILE = "Target Support Files/nmbr/ResourceBundle-nmbr-nmbr-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = nmbr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		024EC3FB590C67352CDD5026049025C8 /* Build configuration list for PBXNativeTarget "nmbr-nmbr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557451E22EE63532094486D3A7774709 /* Debug */,
+				58FF495675CC1AE31626F3A2A761BC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2FA8561B4C90F976F57C5A2B530AED35 /* Build configuration list for PBXNativeTarget "Pods-nmbr_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -932,20 +948,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		405C4B87A06DA79C1792AE797F51C8B2 /* Build configuration list for PBXNativeTarget "nmbr-nmbr" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F30EB1EB9883FC1D1F24749E4C7D2C6 /* Debug */,
-				B959B8D46DCDEDEC2FE875113795E7D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
 				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C0A1D1E89747DD2A81504B3AE970D49 /* Build configuration list for PBXNativeTarget "nmbr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE11B0FF8ABDD556B56C427AEFFEB013 /* Debug */,
+				60951D1AC01B040F58009BD743B372EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -964,15 +980,6 @@
 			buildConfigurations = (
 				74A4367AFBA2BC72E9F0249101354BDA /* Debug */,
 				39D0F8C0DF8A3DF1976A02725A047CFE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3FDB057DA2E1ADE856ED9A145B3705E /* Build configuration list for PBXNativeTarget "nmbr" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04C129A63107A45DDB901073A7AE7E44 /* Debug */,
-				A695A35F100DF206A73BD1591E1D2963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'nmbr/Classes/**/*'
   
   s.resource_bundles = {
-    'nmbr' => ['nmbr/Assets/*.stringsdict']
+    'nmbr' => ['nmbr/Assets/**/*.stringsdict']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

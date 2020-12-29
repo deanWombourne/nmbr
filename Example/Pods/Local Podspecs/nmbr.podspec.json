@@ -15,13 +15,19 @@
     "git": "https://github.com/deanWombourne/nmbr.git",
     "tag": "0.1.0"
   },
+  "swift_versions": [
+    "4.0",
+    "4.2",
+    "5.0"
+  ],
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "nmbr/Classes/**/*",
   "resource_bundles": {
     "nmbr": [
-      "nmbr/Assets/*.stringsdict"
+      "nmbr/Assets/**/*.stringsdict"
     ]
-  }
+  },
+  "swift_version": "5.0"
 }
