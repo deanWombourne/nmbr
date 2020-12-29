@@ -9,16 +9,13 @@
 Pod::Spec.new do |s|
   s.name             = 'nmbr'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of nmbr.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A number formatter specifically for rounding large numbers'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A locale-aware number formatter to deal with shorter versions of large numbers.
+  i.e. 1,000,000 would be either "1M" or "1 million" in en_GB.
+
+  Deals with other locales grouping of digits (i.e. Japan groups by 4, and India groups by 3 then 2)
                        DESC
 
   s.homepage         = 'https://github.com/deanWombourne/nmbr'
