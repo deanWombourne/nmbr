@@ -22,4 +22,22 @@ extension Bundle {
 
         return bundle
     }()
+
+    static func resourceBundleForLocale(_ locale: Locale) -> Bundle {
+        guard let path = localizedPathForLocale(locale: locale) ??
+                localizedPathForLocale(locale: .current) ??
+                localizedPathForLocale(locale: Locale(identifier: "en")) else {
+            fatalError("Could not find resources for locale \(locale.identifier)")
+        }
+
+        guard let bundle = Bundle(path: path) else {
+            fatalError("Failed to create bundle for path \(path)")
+        }
+
+        return bundle
+    }
+
+    private static func localizedPathForLocale(locale: Locale) -> String? {
+        Bundle.resourceBundle.path(forResource: locale.identifier, ofType: "lproj")
+    }
 }

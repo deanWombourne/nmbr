@@ -28,8 +28,8 @@ public final class NMBRFormatter {
         let decimalValue = Decimal(value)
 
         let formats = self.formatStrings(style: self.outputFormat, locale: self.locale)
-        print(formats)
-        print(formats.map { String.localizedStringWithFormat($0.format, 1) })
+//        print(formats)
+//        print(formats.map { String.localizedStringWithFormat($0.format, 1) })
 
         // Get the format which is closest to our value (but not bigger)
         guard let format = formats.filter({ $0.min <= decimalValue }).last else {
@@ -46,6 +46,7 @@ public final class NMBRFormatter {
 
     private func formatStrings(style: NumberFormat, locale: Locale) -> [Scale] {
         // Go through each group in this locale in turn, getting its format string
+        let resourceBundle = Bundle.resourceBundleForLocale(locale)
 
         let styleName: String
         switch style {
@@ -63,7 +64,7 @@ public final class NMBRFormatter {
 
             let format = NSLocalizedString(key,
                                            tableName: "localisations",
-                                           bundle: .resourceBundle,
+                                           bundle: resourceBundle,
                                            comment: "")
             if format == key {
                 break

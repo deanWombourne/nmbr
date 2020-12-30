@@ -60,7 +60,18 @@ final class NMBRTests: XCTestCase {
         XCTAssertEqual("1T", formatter.format(1_000_000_000_000))
     }
 
-    func testTooLargeNumebr_Short_UK() {
+    func testVeryLargeNumber_Short_JP() {
+        let formatter = NMBRFormatter()
+        formatter.locale = Locale(identifier: "ja_JP")
+        formatter.outputFormat = .short
+
+        XCTAssertEqual("1", formatter.format(1))
+        XCTAssertEqual("1万", formatter.format(10_000))
+        XCTAssertEqual("1億", formatter.format(100_000_000))
+        XCTAssertEqual("1兆", formatter.format(1_000_000_000_000))
+    }
+
+    func testTooLargeNumber_Short_UK() {
         let formatter = NMBRFormatter()
         formatter.locale = Locale(identifier: "en_GB")
         formatter.outputFormat = .short
