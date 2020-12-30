@@ -28,8 +28,6 @@ public final class NMBRFormatter {
         let decimalValue = Decimal(value)
 
         let formats = self.formatStrings(style: self.outputFormat, locale: self.locale)
-//        print(formats)
-//        print(formats.map { String.localizedStringWithFormat($0.format, 1) })
 
         // Get the format which is closest to our value (but not bigger)
         guard let format = formats.filter({ $0.min <= decimalValue }).last else {
