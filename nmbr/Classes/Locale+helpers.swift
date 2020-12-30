@@ -9,7 +9,9 @@ import Foundation
 
 extension Locale {
 
-    private static let indiaIdentifiers = Locale.availableIdentifiers.filter { $0.contains("_IN") }
+    private static let indiaIdentifiers = Locale.availableIdentifiers
+        .filter { $0.contains("_IN") }
+        .map { $0.lowercased() }
 
     /// Returns the digit grouping length
     ///

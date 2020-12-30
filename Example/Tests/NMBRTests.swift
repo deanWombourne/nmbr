@@ -15,6 +15,16 @@ final class NMBRTests: XCTestCase {
         XCTAssertEqual("999", formatter.format(999))
     }
 
+    func testSmallNumber_India() {
+        let formatter = NMBRFormatter()
+        formatter.locale = Locale(identifier: "en_IN")
+        formatter.outputFormat = .short
+
+        XCTAssertEqual("0", formatter.format(0))
+        XCTAssertEqual("1", formatter.format(1))
+        XCTAssertEqual("999", formatter.format(999))
+    }
+
     func testSmallNumber_ZH() {
         let formatter = NMBRFormatter()
         formatter.locale = Locale(identifier: "zh")
