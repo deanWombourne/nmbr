@@ -48,6 +48,27 @@ final class NMBRTests: XCTestCase {
         XCTAssertEqual("1.1 thousand", formatter.format(1100))
     }
 
+    func testVeryLargeNumber_Short_UK() {
+        let formatter = NMBRFormatter()
+        formatter.locale = Locale(identifier: "en_GB")
+        formatter.outputFormat = .short
+
+        XCTAssertEqual("1", formatter.format(1))
+        XCTAssertEqual("1K", formatter.format(1_000))
+        XCTAssertEqual("1M", formatter.format(1_000_000))
+        XCTAssertEqual("1B", formatter.format(1_000_000_000))
+        XCTAssertEqual("1T", formatter.format(1_000_000_000_000))
+    }
+
+    func testTooLargeNumebr_Short_UK() {
+        let formatter = NMBRFormatter()
+        formatter.locale = Locale(identifier: "en_GB")
+        formatter.outputFormat = .short
+
+        // See what happens if the number is past the highest named group in the strings dict
+        XCTAssertEqual("1000T", formatter.format(1_000_000_000_000_000))
+    }
+
     func testLargeNumber_Short_UK() {
         let formatter = NMBRFormatter()
         formatter.locale = Locale(identifier: "en_GB")

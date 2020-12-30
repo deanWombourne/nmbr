@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* NMBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* NMBRTests.swift */; };
+		A0A4C49C259CDB6200BF0B6F /* StringTrimTrailingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C49B259CDB6200BF0B6F /* StringTrimTrailingTests.swift */; };
 		A8ACE87212DA5EF9AC404D94 /* Pods_nmbr_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDD39B7DCDBD135E2E5CF2B /* Pods_nmbr_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		8CDD39B7DCDBD135E2E5CF2B /* Pods_nmbr_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		990B945AF5BF6B598D180F61 /* Pods-nmbr_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Tests.debug.xcconfig"; path = "Target Support Files/Pods-nmbr_Tests/Pods-nmbr_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A06E2F812594CEC5002F53E5 /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		A0A4C49B259CDB6200BF0B6F /* StringTrimTrailingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTrimTrailingTests.swift; sourceTree = "<group>"; };
 		DAC1A0F65B1964467F18BC59 /* Pods-nmbr_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Tests.release.xcconfig"; path = "Target Support Files/Pods-nmbr_Tests/Pods-nmbr_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E777A29CEBD3CD0E4D6F0C11 /* Pods_nmbr_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7DBFA98DA4499D3D792C26 /* nmbr.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = nmbr.podspec; path = ../nmbr.podspec; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* NMBRTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				A0A4C49B259CDB6200BF0B6F /* StringTrimTrailingTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A4C49C259CDB6200BF0B6F /* StringTrimTrailingTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* NMBRTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -80,7 +80,7 @@ public final class NMBRFormatter {
 
     private func outputString(value: Double, format: String) -> String {
         let numberPart = String(format: "%.\(self.precision)f", value)
-            .trimTrailing(decimalSeparator: self.locale.decimalSeparator ?? ".")
+            .trimTrailing(decimalSeparator: self.locale.decimalSeparator)
 
         let format = String.localizedStringWithFormat(format, value)
 
