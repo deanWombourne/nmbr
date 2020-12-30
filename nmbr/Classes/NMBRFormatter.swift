@@ -84,10 +84,6 @@ public final class NMBRFormatter {
 
         let format = String.localizedStringWithFormat(format, value)
 
-        if format.isEmpty {
-            return String(numberPart)
-        } else {
-            return numberPart + format
-        }
+        return numberPart + format
     }
 }
