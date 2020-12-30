@@ -115,3 +115,15 @@ final class NMBRPrecisionTests: XCTestCase {
         XCTAssertEqual("1.2K", formatter.format(1151))
     }
 }
+
+final class NSBRLocalisationTests: XCTestCase {
+
+    func testFallbackLocalisations() {
+        // Make sure that a fictional locale identifier doesn't crash the library
+        let formatter = NMBRFormatter()
+        formatter.locale = Locale(identifier: "aa_ZZ")
+
+        // Should default back to "en"
+        XCTAssertEqual("1K", formatter.format(1000))
+    }
+}
