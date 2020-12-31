@@ -46,13 +46,15 @@ formatter.precision = 1
 
 // This is optional - it defaults to the current device locale
 formatter.locale = NSLocale(identifier: "en_GB")
-```
 
+// If you want a currency symbol, set the currency code. IF not, leave it as `nil`
+formatter.currencyCode = "GBP"
+```
 
 Use the formatter
 
 ```swift
-myLabel.text = formatter.string(123.456)
+myLabel.text = formatter.string(123.456) // "£123.46"
 ```
 
 ## Advice
