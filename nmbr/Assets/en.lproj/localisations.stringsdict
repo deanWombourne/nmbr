@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>short scale 1000000000000</key>
+	<key>short scale 12</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -16,7 +16,7 @@
 			<string>T</string>
 		</dict>
 	</dict>
-	<key>short scale 1000000000</key>
+	<key>short scale 9</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -30,7 +30,7 @@
 			<string>B</string>
 		</dict>
 	</dict>
-	<key>short scale 1000000</key>
+	<key>short scale 6</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -44,7 +44,7 @@
 			<string>M</string>
 		</dict>
 	</dict>
-	<key>short scale 1000</key>
+	<key>short scale 3</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -58,7 +58,49 @@
 			<string>K</string>
 		</dict>
 	</dict>
-	<key>long scale 1000</key>
+	<key>long scale 12</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>f</string>
+			<key>other</key>
+			<string> trillion</string>
+		</dict>
+	</dict>
+	<key>long scale 9</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>f</string>
+			<key>other</key>
+			<string> billion</string>
+		</dict>
+	</dict>
+	<key>long scale 6</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>f</string>
+			<key>other</key>
+			<string> million</string>
+		</dict>
+	</dict>
+	<key>long scale 3</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>

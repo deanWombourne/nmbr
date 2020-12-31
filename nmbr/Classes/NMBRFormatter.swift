@@ -57,8 +57,7 @@ public final class NMBRFormatter {
         var index = 1
         var group = locale.digitGroupingAtIndex(index)
         while true {
-            let min = pow(10, group)
-            let key = "\(styleName) scale \(min)"
+            let key = "\(styleName) scale \(group)"
 
             let format = NSLocalizedString(key,
                                            tableName: "localisations",
@@ -68,6 +67,7 @@ public final class NMBRFormatter {
                 break
             }
 
+            let min = pow(10, group)
             formats.append(Scale(min: min, format: format))
 
             group += locale.digitGroupingAtIndex(index)

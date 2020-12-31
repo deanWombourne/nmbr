@@ -46,6 +46,10 @@ final class NMBRTests: XCTestCase {
 
         XCTAssertEqual("1 thousand", formatter.format(1000))
         XCTAssertEqual("1.1 thousand", formatter.format(1100))
+
+        XCTAssertEqual("1 million", formatter.format(1_000_000))
+        XCTAssertEqual("1 billion", formatter.format(1_000_000_000))
+        XCTAssertEqual("1 trillion", formatter.format(1_000_000_000_000))
     }
 
     func testVeryLargeNumber_Short_UK() {

@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>short scale 1000000000000</key>
+	<key>short scale 12</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -16,7 +16,7 @@
 			<string>兆</string>
 		</dict>
 	</dict>
-	<key>short scale 100000000</key>
+	<key>short scale 8</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -30,7 +30,7 @@
 			<string>億</string>
 		</dict>
 	</dict>
-	<key>short scale 10000</key>
+	<key>short scale 4</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
@@ -44,7 +44,35 @@
 			<string>万</string>
 		</dict>
 	</dict>
-	<key>long scale 10000</key>
+	<key>long scale 12</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>f</string>
+			<key>other</key>
+			<string>万</string>
+		</dict>
+	</dict>
+	<key>long scale 8</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>f</string>
+			<key>other</key>
+			<string>万</string>
+		</dict>
+	</dict>
+	<key>long scale 4</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@VARIABLE@</string>
