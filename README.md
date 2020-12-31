@@ -7,7 +7,7 @@
 
 This pod is a (hopefully) very small library to short format numbers like this: http://cldr.unicode.org/translation/numbers-currency/number-patterns#TOC-Compact-decimal-formatting-Short-Numbers.
 
-It's main purpose is for formatting pricing information (though it will format any number). 
+It's main purpose is for formatting pricing information (though it will format any number) - for example 1,100,000 would become £1.1M in en_GB, but would become £110万 in ja_JP.
 
 It should
 
