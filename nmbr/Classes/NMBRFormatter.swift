@@ -21,6 +21,8 @@ public final class NMBRFormatter {
 
     public var locale: Locale = Locale.autoupdatingCurrent
 
+    public var currencyCode: String? = nil
+
     public init() {
     }
 
@@ -78,11 +80,26 @@ public final class NMBRFormatter {
     }
 
     private func outputString(value: Double, format: String) -> String {
-        let numberPart = String(format: "%.\(self.precision)f", value)
+        let formatter = NumberFormatter()
+        formatter.currencyCode = self.currencyCode
+        formatter.numberStyle = self.currencyCode != nil ? .currency : .decimal
+
+        let rounded = value.rounded(to: self.precision)
+
+        //let numberPart = String(format: "%.\(self.precision)f", value)
+        let numberPart = formatter.string(from: NSNumber(value: rounded))!
             .trimTrailing(decimalSeparator: self.locale.decimalSeparator)
 
         let format = String.localizedStringWithFormat(format, value)
 
         return numberPart + format
+    }
+}
+
+extension Double {
+
+    func rounded(to: Int, rule: FloatingPointRoundingRule = .toNearestOrEven) -> Double {
+        let mul = (pow(10, to) as NSNumber).doubleValue
+        return (self * mul).rounded(rule) / mul
     }
 }

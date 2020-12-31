@@ -34,7 +34,7 @@ final class NMBRTests: XCTestCase {
         XCTAssertEqual("0", formatter.format(0))
         XCTAssertEqual("1", formatter.format(1))
         XCTAssertEqual("999", formatter.format(999))
-        XCTAssertEqual("9999", formatter.format(9999))
+        XCTAssertEqual("9,999", formatter.format(9999))
     }
 
     // MARK: Long numbers (greater or equal to the first grouping separator)
@@ -81,7 +81,7 @@ final class NMBRTests: XCTestCase {
         formatter.outputFormat = .short
 
         // See what happens if the number is past the highest named group in the strings dict
-        XCTAssertEqual("1000T", formatter.format(1_000_000_000_000_000))
+        XCTAssertEqual("1,000T", formatter.format(1_000_000_000_000_000))
     }
 
     func testLargeNumber_Short_UK() {
@@ -129,5 +129,18 @@ final class NSBRLocalisationTests: XCTestCase {
 
         // Should default back to "en"
         XCTAssertEqual("1K", formatter.format(1000))
+    }
+}
+
+final class NMBRFormatterCurrencyTests: XCTestCase {
+
+    func testGBP() {
+        let formatter = NMBRFormatter()
+        formatter.currencyCode = "GBP"
+        formatter.precision = 2
+        formatter.outputFormat = .short
+        formatter.locale = Locale(identifier: "en_GB")
+
+        XCTAssertEqual("£100", formatter.format(100))
     }
 }
