@@ -8,6 +8,17 @@ target 'nmbr_Example' do
   pod 'SwiftLint'
 
   target 'nmbr_Tests' do
-    inherit! :search_paths
+    pod 'nmbr', :path => '../'
+  end
+end
+
+post_install do |installer_representation|
+  project = installer_representation.pods_project
+  project.targets.each do |target|
+    if target.name == "icu4c-iosx"
+      target.build_configurations.each do |config|
+        target.build_settings(config.name)['VALID_ARCHS'] = "arm64 X86_64"
+      end
+    end
   end
 end

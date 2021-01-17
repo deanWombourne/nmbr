@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.swift_versions = [ '4.0', '4.2', '5.0' ]
-
+  s.static_framework = true
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'nmbr/Classes/**/*'
@@ -35,7 +35,12 @@ Pod::Spec.new do |s|
     'nmbr' => ['nmbr/Assets/**/*.stringsdict']
   }
 
+  s.library = 'c++'
+
+  s.public_header_files = [ "nmbr/Classes/NMBRFormatter.h" ]
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'icu4c-iosx'
+
 end

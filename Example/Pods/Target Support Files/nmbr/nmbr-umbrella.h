@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NMBRFormatter.h"
 
 FOUNDATION_EXPORT double nmbrVersionNumber;
 FOUNDATION_EXPORT const unsigned char nmbrVersionString[];
