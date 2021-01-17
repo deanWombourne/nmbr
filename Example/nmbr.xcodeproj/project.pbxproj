@@ -49,7 +49,6 @@
 		8F785FFC25B48E0C00D1E71F /* icuio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = icuio.xcframework; path = "Pods/icu4c-iosx/product/frameworks/icuio.xcframework"; sourceTree = "<group>"; };
 		8F785FFD25B48E0C00D1E71F /* icuuc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = icuuc.xcframework; path = "Pods/icu4c-iosx/product/frameworks/icuuc.xcframework"; sourceTree = "<group>"; };
 		8F9B938825ADBF9B0020010E /* icui18n.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = icui18n.xcframework; path = "../../icu4c-iosx/product/frameworks/icui18n.xcframework"; sourceTree = "<group>"; };
-		8F9B945325ADC0860020010E /* nmbr_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nmbr_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		8FD1B0DD25B4BFB200758052 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		8FD1B0E525B4C17C00758052 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8FD1B0E625B4C17C00758052 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
@@ -112,7 +111,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				8F9B945325ADC0860020010E /* nmbr_Example-Bridging-Header.h */,
 			);
 			name = "Example for nmbr";
 			path = nmbr;
@@ -562,7 +560,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nmbr/nmbr_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -585,7 +583,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nmbr/nmbr_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

@@ -1,6 +1,6 @@
 //
 //  NMBRFormatter.m
-//  Test
+//  nmbr
 //
 //  Created by Kerr Marin Miller on 17/01/2021.
 //
@@ -20,21 +20,22 @@
 
 @implementation NMBRFormatter
 
--(instancetype)initWithLocale:(NSString *)locale {
-    return [self initWithLocale:locale
-                   maxPrecision:2
-                       notation:NMBRFormatterNotationShort
-               groupingStrategy:NMBRFormatterGroupingStrategyAuto];
+- (nonnull instancetype)init {
+    return [self initWithLocale:[NSLocale currentLocale].localeIdentifier];
 }
 
-- (instancetype)initWithLocale:(NSString *)locale maxPrecision:(int)precision {
+-(nonnull instancetype)initWithLocale:(NSString *)locale {
+    return [self initWithLocale:locale
+                   maxPrecision:2];
+}
+
+- (nonnull instancetype)initWithLocale:(NSString *)locale maxPrecision:(int)precision {
     return [self initWithLocale:locale
                    maxPrecision:precision
-                       notation:NMBRFormatterNotationShort
-               groupingStrategy:NMBRFormatterGroupingStrategyAuto];
+                       notation:NMBRFormatterNotationShort];
 }
 
-- (instancetype)initWithLocale:(NSString *)locale maxPrecision:(int)precision notation:(NMBRFormatterNotation)notation {
+- (nonnull instancetype)initWithLocale:(NSString *)locale maxPrecision:(int)precision notation:(NMBRFormatterNotation)notation {
     return [self initWithLocale:locale
                    maxPrecision:precision
                        notation:notation
