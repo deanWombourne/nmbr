@@ -17,7 +17,7 @@ post_install do |installer_representation|
   project.targets.each do |target|
     if target.name == "icu4c-iosx"
       target.build_configurations.each do |config|
-        target.build_settings(config.name)['VALID_ARCHS'] = "arm64 X86_64"
+        target.build_settings(config.name)['VALID_ARCHS'] = "$(ARCHS_STANDARD)"
       end
     end
   end

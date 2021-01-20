@@ -1371,7 +1371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 X86_64";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -1422,7 +1422,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 X86_64";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};
