@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6003249402989DAE6B14C30A /* Pods_nmbr_Example_nmbr_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4101B9D2E3A173C0B4DB14BA /* Pods_nmbr_Example_nmbr_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -15,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* NMBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* NMBRTests.swift */; };
 		B4713BE44597F8F9835797BA /* Pods_nmbr_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFDC8DF1BDB6ED90FAC55B1 /* Pods_nmbr_Example.framework */; };
+		D6DA81392C39DBEFEA31C1E0 /* Pods_nmbr_Example_nmbr_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D231FA61137B5B4313C559 /* Pods_nmbr_Example_nmbr_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08D231FA61137B5B4313C559 /* Pods_nmbr_Example_nmbr_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Example_nmbr_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272C56D520036FA222F6E2F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3A33888B4ADC7E7CC332158F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4101B9D2E3A173C0B4DB14BA /* Pods_nmbr_Example_nmbr_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmbr_Example_nmbr_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* nmbr_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nmbr_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003249402989DAE6B14C30A /* Pods_nmbr_Example_nmbr_Tests.framework in Frameworks */,
+				D6DA81392C39DBEFEA31C1E0 /* Pods_nmbr_Example_nmbr_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 				8F785FFD25B48E0C00D1E71F /* icuuc.xcframework */,
 				8F9B938825ADBF9B0020010E /* icui18n.xcframework */,
 				9DFDC8DF1BDB6ED90FAC55B1 /* Pods_nmbr_Example.framework */,
-				4101B9D2E3A173C0B4DB14BA /* Pods_nmbr_Example_nmbr_Tests.framework */,
+				08D231FA61137B5B4313C559 /* Pods_nmbr_Example_nmbr_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				3694BDC782ED0F04926C7749 /* [CP] Copy Pods Resources */,
+				2892F484979609342F2B4E82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,7 +289,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3694BDC782ED0F04926C7749 /* [CP] Copy Pods Resources */ = {
+		2892F484979609342F2B4E82 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
