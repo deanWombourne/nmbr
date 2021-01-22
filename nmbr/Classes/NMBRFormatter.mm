@@ -91,10 +91,6 @@
     return [NSString stringWithUTF8String:str.c_str()];
 }
 
-unsigned long strlen16(char16_t* strarg) {
-    return std::char_traits<char16_t>::length(strarg);
-}
-
 icu_68::number::Notation notationFromNMBRFormatterNotation(NMBRFormatterNotation notation) {
     switch (notation) {
         case NMBRFormatterNotationShort:

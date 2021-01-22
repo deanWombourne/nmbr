@@ -150,7 +150,7 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icudata.xcframework" "icudata" "library" "ios-x86_64-simulator" "ios-arm64"
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icui18n.xcframework" "icui18n" "library" "ios-x86_64-simulator" "ios-arm64"
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuio.xcframework" "icuio" "library" "ios-x86_64-simulator" "ios-arm64"
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuuc.xcframework" "icuuc" "library" "ios-x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icui18n.xcframework" "icui18n" "library" "ios-arm64" "ios-x86_64-simulator"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuio.xcframework" "icuio" "library" "ios-arm64" "ios-x86_64-simulator"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuuc.xcframework" "icuuc" "library" "ios-arm64" "ios-x86_64-simulator"
 
