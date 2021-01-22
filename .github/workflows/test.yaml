@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - '*.md'
+      - '.gitignore'
+      - 'swiftlint.yml'
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+      - '*.md'
+      - '.gitignore'
+      - 'swiftlint.yml'
+
+name: Test
+jobs:
+  test:
+    name: Test
+    runs-on: macos-latest
+    # Set timeout to prevent overcharging
+    timeout-minutes: 20
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1.2.1
+        with:
+          xcode-version: 12.3
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build and test
+      - run: xcodebuild test -workspace "Example/nmbr.xcworkspace" -scheme "nmbr-Example" -destination "platform=iOS Simulator,OS=14.3,name=iPhone 12"
