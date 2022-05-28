@@ -6,6 +6,10 @@ public enum NumberFormat {
 
 public final class NMBRFormatter {
 
+    private enum Constants {
+        static let initialLocaleValue: Locale = .autoupdatingCurrent
+    }
+
     private struct Scale: CustomStringConvertible {
         let min: Decimal
         let format: String
@@ -15,13 +19,28 @@ public final class NMBRFormatter {
         }
     }
 
-    public var precision: Int = 2
+    private let formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.locale = Constants.initialLocaleValue
+        formatter.numberStyle = .decimal
+        return formatter
+    }()
 
+    public var precision: Int = 2
     public var outputFormat: NumberFormat = .short
 
-    public var locale: Locale = Locale.autoupdatingCurrent
+    public var locale: Locale = Constants.initialLocaleValue {
+        didSet {
+            self.formatter.locale = self.locale
+        }
+    }
 
-    public var currencyCode: String? = nil
+    public var currencyCode: String? = nil {
+        didSet {
+            self.formatter.currencyCode = self.currencyCode
+            self.formatter.numberStyle = self.currencyCode != nil ? .currency : .decimal
+        }
+    }
 
     public init() {
     }
@@ -80,14 +99,11 @@ public final class NMBRFormatter {
     }
 
     private func outputString(value: Double, format: String) -> String {
-        let formatter = NumberFormatter()
-        formatter.currencyCode = self.currencyCode
-        formatter.numberStyle = self.currencyCode != nil ? .currency : .decimal
 
         let rounded = value.rounded(to: self.precision)
 
         //let numberPart = String(format: "%.\(self.precision)f", value)
-        let numberPart = formatter.string(from: NSNumber(value: rounded))!
+        let numberPart = self.formatter.string(from: NSNumber(value: rounded))!
             .trimTrailing(decimalSeparator: self.locale.decimalSeparator)
 
         let format = String.localizedStringWithFormat(format, value)

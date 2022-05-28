@@ -144,3 +144,16 @@ final class NMBRFormatterCurrencyTests: XCTestCase {
         XCTAssertEqual("£100", formatter.format(100))
     }
 }
+
+final class NMBRFormatterPerformanceTests: XCTestCase {
+
+    func testPerformance() {
+        let formatter = NMBRFormatter()
+
+        measure {
+            for amount in 1..<10000 {
+                _ = formatter.format(Double(amount))
+            }
+        }
+    }
+}
