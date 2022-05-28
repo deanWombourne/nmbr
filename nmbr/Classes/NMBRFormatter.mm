@@ -13,7 +13,7 @@
 #include <unicode/unum.h>
 
 @interface NMBRFormatter () {
-    icu_68::number::LocalizedNumberFormatter formatter;
+    icu_71::number::LocalizedNumberFormatter formatter;
 }
 
 @end
@@ -47,7 +47,7 @@
                               notation:(NMBRFormatterNotation)notation
                       groupingStrategy:(NMBRFormatterGroupingStrategy)groupingStrategy {
     if (self = [super init]) {
-        icu_68::number::Notation notat = notationFromNMBRFormatterNotation(notation);
+        icu_71::number::Notation notat = notationFromNMBRFormatterNotation(notation);
         UNumberGroupingStrategy strategy = uNumberStrategyFromNMBRFormatterGroupingStrategy(groupingStrategy);
         formatter = icu::number::NumberFormatter::with()
             .notation(notat)
@@ -79,7 +79,7 @@
     UErrorCode stringStatus = U_ZERO_ERROR;
     std::string str;
     formatter
-        .unit(icu_68::CurrencyUnit(currencyCode.UTF8String, status))
+        .unit(icu_71::CurrencyUnit(currencyCode.UTF8String, status))
         .formatDouble(number, status)
         .toString(stringStatus)
         .toUTF8String(str);
@@ -91,12 +91,12 @@
     return [NSString stringWithUTF8String:str.c_str()];
 }
 
-icu_68::number::Notation notationFromNMBRFormatterNotation(NMBRFormatterNotation notation) {
+icu_71::number::Notation notationFromNMBRFormatterNotation(NMBRFormatterNotation notation) {
     switch (notation) {
         case NMBRFormatterNotationShort:
-            return icu_68::number::Notation::compactShort();
+            return icu_71::number::Notation::compactShort();
         case NMBRFormatterNotationLong:
-            return icu_68::number::Notation::compactLong();
+            return icu_71::number::Notation::compactLong();
     }
 }
 

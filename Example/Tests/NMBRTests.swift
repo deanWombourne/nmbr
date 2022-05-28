@@ -119,3 +119,19 @@ final class NMBRFormatterCurrencyTests: XCTestCase {
         XCTAssertEqual("£100", formatter.formatCurrency(100, currencyCode: "GBP"))
     }
 }
+
+final class NMBRFormatterCurrencyRightHandSideTests: XCTestCase {
+
+    func testFRLocale() {
+        let formatter = NMBRFormatter(locale: "fr_FR", maxPrecision: 0, notation: .short)
+
+        XCTAssertEqual("100 k €", formatter.formatCurrency(100000, currencyCode: "EUR"))
+    }
+
+    func testESLocale() {
+        let formatter = NMBRFormatter(locale: "es_ES", maxPrecision: 0, notation: .short)
+
+        XCTAssertEqual("100 mil €", formatter.formatCurrency(100000, currencyCode: "EUR"))
+        XCTAssertEqual("100 mil M€", formatter.formatCurrency(100_000_000_000, currencyCode: "EUR"))
+    }
+}
