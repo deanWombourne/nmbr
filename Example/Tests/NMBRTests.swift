@@ -149,8 +149,6 @@ final class NMBRFormatterPerformanceTests: XCTestCase {
 
     func testPerformance() {
         let formatter = NMBRFormatter()
-        formatter.currencyCode = "EUR"
-        formatter.locale = Locale(identifier: "es_ES")
 
         measure {
             for amount in 1..<10000 {
