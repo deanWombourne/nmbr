@@ -1,5 +1,5 @@
 import XCTest
-import nmbr
+import nmbr_icu
 
 final class NMBRTests: XCTestCase {
 

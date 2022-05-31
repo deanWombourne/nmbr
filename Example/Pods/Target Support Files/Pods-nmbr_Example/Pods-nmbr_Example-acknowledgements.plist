@@ -492,7 +492,7 @@ THE SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>nmbr</string>
+			<string>nmbr-icu</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

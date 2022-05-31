@@ -58,7 +58,7 @@
 		A0D88DDC2E58B83EE978BC36 /* Pods-nmbr_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Example.release.xcconfig"; path = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A2B68A42E77E3FF3E154D35F /* Pods-nmbr_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Example.debug.xcconfig"; path = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DFB6033C3F2C28896DA1753E /* Pods-nmbr_Example-nmbr_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmbr_Example-nmbr_Tests.debug.xcconfig"; path = "Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EA7DBFA98DA4499D3D792C26 /* nmbr.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = nmbr.podspec; path = ../nmbr.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EA7DBFA98DA4499D3D792C26 /* nmbr-icu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "nmbr-icu.podspec"; path = "../nmbr-icu.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				A06E2F812594CEC5002F53E5 /* swiftlint.yml */,
-				EA7DBFA98DA4499D3D792C26 /* nmbr.podspec */,
+				EA7DBFA98DA4499D3D792C26 /* nmbr-icu.podspec */,
 				272C56D520036FA222F6E2F6 /* README.md */,
 				3A33888B4ADC7E7CC332158F /* LICENSE */,
 			);
@@ -195,7 +195,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				A06E2F7C2594CE5E002F53E5 /* Swiftlint */,
-				A365342A2017DAE962412F07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,7 +213,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				48E8815191E6E4D44192CDE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,10 +248,9 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "nmbr" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -289,24 +286,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48E8815191E6E4D44192CDE5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/nmbr/nmbr.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nmbr.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		79C54D8AD432730C16589B93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,24 +325,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftLint/swiftlint --config swiftlint.yml --path .\n";
-		};
-		A365342A2017DAE962412F07 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/nmbr/nmbr.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nmbr.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		B46E1781DA8021A6DD3E1D5E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -570,7 +531,7 @@
 					"-l\"icuio\"",
 					"-l\"icuuc\"",
 					"-framework",
-					"\"nmbr\"",
+					"\"nmbr_icu\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -605,7 +566,7 @@
 					"-l\"icuio\"",
 					"-l\"icuuc\"",
 					"-framework",
-					"\"nmbr\"",
+					"\"nmbr_icu\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

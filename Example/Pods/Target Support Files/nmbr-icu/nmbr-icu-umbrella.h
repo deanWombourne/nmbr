@@ -12,6 +12,6 @@
 
 #import "NMBRFormatter.h"
 
-FOUNDATION_EXPORT double nmbrVersionNumber;
-FOUNDATION_EXPORT const unsigned char nmbrVersionString[];
+FOUNDATION_EXPORT double nmbr_icuVersionNumber;
+FOUNDATION_EXPORT const unsigned char nmbr_icuVersionString[];
 
