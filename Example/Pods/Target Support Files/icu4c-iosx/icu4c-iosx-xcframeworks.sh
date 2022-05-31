@@ -17,17 +17,20 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "icudata.xcframework/macos-arm64")
-    echo ""
+  "icudata.xcframework/ios-arm64-simulator")
+    echo "simulator"
     ;;
   "icudata.xcframework/ios-arm64")
     echo ""
     ;;
-  "icudata.xcframework/ios-arm64-simulator")
-    echo "simulator"
+  "icudata.xcframework/macos-arm64")
+    echo ""
     ;;
   "icudata.xcframework/ios-arm64-maccatalyst")
     echo "maccatalyst"
+    ;;
+  "icui18n.xcframework/ios-arm64")
+    echo ""
     ;;
   "icui18n.xcframework/ios-arm64-simulator")
     echo "simulator"
@@ -35,35 +38,32 @@ variant_for_slice()
   "icui18n.xcframework/ios-arm64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "icui18n.xcframework/ios-arm64")
-    echo ""
-    ;;
   "icui18n.xcframework/macos-arm64")
-    echo ""
-    ;;
-  "icuio.xcframework/macos-arm64")
-    echo ""
-    ;;
-  "icuio.xcframework/ios-arm64-simulator")
-    echo "simulator"
-    ;;
-  "icuio.xcframework/ios-arm64")
     echo ""
     ;;
   "icuio.xcframework/ios-arm64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "icuuc.xcframework/macos-arm64")
+  "icuio.xcframework/macos-arm64")
     echo ""
+    ;;
+  "icuio.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "icuio.xcframework/ios-arm64-simulator")
+    echo "simulator"
     ;;
   "icuuc.xcframework/ios-arm64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "icuuc.xcframework/ios-arm64")
-    echo ""
-    ;;
   "icuuc.xcframework/ios-arm64-simulator")
     echo "simulator"
+    ;;
+  "icuuc.xcframework/macos-arm64")
+    echo ""
+    ;;
+  "icuuc.xcframework/ios-arm64")
+    echo ""
     ;;
   esac
 }
@@ -71,16 +71,19 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "icudata.xcframework/macos-arm64")
+  "icudata.xcframework/ios-arm64-simulator")
     echo "arm64"
     ;;
   "icudata.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "icudata.xcframework/ios-arm64-simulator")
+  "icudata.xcframework/macos-arm64")
     echo "arm64"
     ;;
   "icudata.xcframework/ios-arm64-maccatalyst")
+    echo "arm64"
+    ;;
+  "icui18n.xcframework/ios-arm64")
     echo "arm64"
     ;;
   "icui18n.xcframework/ios-arm64-simulator")
@@ -89,34 +92,31 @@ archs_for_slice()
   "icui18n.xcframework/ios-arm64-maccatalyst")
     echo "arm64"
     ;;
-  "icui18n.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
   "icui18n.xcframework/macos-arm64")
-    echo "arm64"
-    ;;
-  "icuio.xcframework/macos-arm64")
-    echo "arm64"
-    ;;
-  "icuio.xcframework/ios-arm64-simulator")
-    echo "arm64"
-    ;;
-  "icuio.xcframework/ios-arm64")
     echo "arm64"
     ;;
   "icuio.xcframework/ios-arm64-maccatalyst")
     echo "arm64"
     ;;
-  "icuuc.xcframework/macos-arm64")
+  "icuio.xcframework/macos-arm64")
+    echo "arm64"
+    ;;
+  "icuio.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "icuio.xcframework/ios-arm64-simulator")
     echo "arm64"
     ;;
   "icuuc.xcframework/ios-arm64-maccatalyst")
     echo "arm64"
     ;;
-  "icuuc.xcframework/ios-arm64")
+  "icuuc.xcframework/ios-arm64-simulator")
     echo "arm64"
     ;;
-  "icuuc.xcframework/ios-arm64-simulator")
+  "icuuc.xcframework/macos-arm64")
+    echo "arm64"
+    ;;
+  "icuuc.xcframework/ios-arm64")
     echo "arm64"
     ;;
   esac
@@ -201,8 +201,8 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icudata.xcframework" "icu4c-iosx" "library" "ios-arm64" "ios-arm64-simulator" "ios-arm64-maccatalyst"
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icui18n.xcframework" "icu4c-iosx" "library" "ios-arm64-simulator" "ios-arm64-maccatalyst" "ios-arm64"
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuio.xcframework" "icu4c-iosx" "library" "ios-arm64-simulator" "ios-arm64" "ios-arm64-maccatalyst"
-install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuuc.xcframework" "icu4c-iosx" "library" "ios-arm64-maccatalyst" "ios-arm64" "ios-arm64-simulator"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icudata.xcframework" "icu4c-iosx" "library" "ios-arm64-simulator" "ios-arm64" "ios-arm64-maccatalyst"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icui18n.xcframework" "icu4c-iosx" "library" "ios-arm64" "ios-arm64-simulator" "ios-arm64-maccatalyst"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuio.xcframework" "icu4c-iosx" "library" "ios-arm64-maccatalyst" "ios-arm64" "ios-arm64-simulator"
+install_xcframework "${PODS_ROOT}/icu4c-iosx/product/frameworks/icuuc.xcframework" "icu4c-iosx" "library" "ios-arm64-maccatalyst" "ios-arm64-simulator" "ios-arm64"
 

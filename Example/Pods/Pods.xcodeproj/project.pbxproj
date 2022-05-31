@@ -1038,11 +1038,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01095B781C0EF76A45501155A88A2CFC /* Release */ = {
+		0A18E05DBC206C6ECD196D71D6A9EC1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551AFB13A950AC9F9192AD753F9CC06C /* nmbr.release.xcconfig */;
+			baseConfigurationReference = A47303D058C64498199429872872B1CF /* nmbr.debug.xcconfig */;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
+				IBSC_MODULE = nmbr;
+				INFOPLIST_FILE = "Target Support Files/nmbr/ResourceBundle-nmbr-nmbr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = nmbr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		112AB6230B19EBB3A63411C0165A19F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D0A8DD54329EFA7A134DEB5BDEE1DE /* Pods-nmbr_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1051,19 +1069,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nmbr/nmbr-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nmbr/nmbr-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/nmbr/nmbr.modulemap";
-				PRODUCT_MODULE_NAME = nmbr;
-				PRODUCT_NAME = nmbr;
+				MODULEMAP_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1071,11 +1089,13 @@
 			};
 			name = Release;
 		};
-		0C4E63481A44FF2B0B980258DB7DB27E /* Debug */ = {
+		18152486596397B71BEF1A3007C4597B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A47303D058C64498199429872872B1CF /* nmbr.debug.xcconfig */;
+			baseConfigurationReference = D9DC841771979CF71ECA321AD6458A94 /* Pods-nmbr_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1084,26 +1104,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/nmbr/nmbr-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/nmbr/nmbr-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/nmbr/nmbr.modulemap";
-				PRODUCT_MODULE_NAME = nmbr;
-				PRODUCT_NAME = nmbr;
+				MODULEMAP_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+		39D0F8C0DF8A3DF1976A02725A047CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B85CF72FE1F49928587CE6FC362998 /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1156,7 +1191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1169,7 +1204,23 @@
 			};
 			name = Debug;
 		};
-		31911AA4D26E70F9BEE82C9D6164E1A7 /* Release */ = {
+		4BE8E0AAF42A1747455FDAF19411B4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 551AFB13A950AC9F9192AD753F9CC06C /* nmbr.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
+				IBSC_MODULE = nmbr;
+				INFOPLIST_FILE = "Target Support Files/nmbr/ResourceBundle-nmbr-nmbr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = nmbr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		683646F7FFA159C93DA3B49990343441 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BDD455AEE6329712DDF03915DBA675C /* Pods-nmbr_Example-nmbr_Tests.release.xcconfig */;
 			buildSettings = {
@@ -1186,7 +1237,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests.modulemap";
@@ -1204,9 +1255,9 @@
 			};
 			name = Release;
 		};
-		39D0F8C0DF8A3DF1976A02725A047CFE /* Release */ = {
+		74A4367AFBA2BC72E9F0249101354BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17B85CF72FE1F49928587CE6FC362998 /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 77F6B5E34C00F203575CFDDEA5B72239 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1215,11 +1266,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		4AC58F12B53C709FD6BD90906B6E4FC9 /* Debug */ = {
+		7CD5B9EA41E9B37E9C97E5DEE2A2C2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFA167229F99D6C5A20BB68365AD64D7 /* Pods-nmbr_Example-nmbr_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -1236,7 +1286,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nmbr_Example-nmbr_Tests/Pods-nmbr_Example-nmbr_Tests.modulemap";
@@ -1253,23 +1303,7 @@
 			};
 			name = Debug;
 		};
-		575A095B0922DE0EBFD820B5F72147C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A47303D058C64498199429872872B1CF /* nmbr.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
-				IBSC_MODULE = nmbr;
-				INFOPLIST_FILE = "Target Support Files/nmbr/ResourceBundle-nmbr-nmbr-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = nmbr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1319,7 +1353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1331,56 +1365,7 @@
 			};
 			name = Release;
 		};
-		7064C03BD215F02744022DEAE6ECD03D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D0A8DD54329EFA7A134DEB5BDEE1DE /* Pods-nmbr_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74A4367AFBA2BC72E9F0249101354BDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77F6B5E34C00F203575CFDDEA5B72239 /* SwiftLint.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A1186C5AFF4E670D59155734A6CF9AF8 /* Debug */ = {
+		A54BBCCE073DA24F366A62AD9A4CA094 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBF0ACB1C21399DA0609EC7EBDD19E58 /* icu4c-iosx.debug.xcconfig */;
 			buildSettings = {
@@ -1388,18 +1373,33 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ACADC6718A99F790606EA55C3002ECB2 /* Debug */ = {
+		D839E0575F55DA48BAA5FE72A73B65EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9DC841771979CF71ECA321AD6458A94 /* Pods-nmbr_Example.debug.xcconfig */;
+			baseConfigurationReference = 41AA74E1F10865D29A106F0485F1B9E3 /* icu4c-iosx.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0766E8894C1261D73216005DF4BD3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47303D058C64498199429872872B1CF /* nmbr.debug.xcconfig */;
+			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1410,54 +1410,56 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/nmbr/nmbr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nmbr/nmbr-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-nmbr_Example/Pods-nmbr_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/nmbr/nmbr.modulemap";
+				PRODUCT_MODULE_NAME = nmbr;
+				PRODUCT_NAME = nmbr;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C49EC666BE472CA782D4A251ACDB6878 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41AA74E1F10865D29A106F0485F1B9E3 /* icu4c-iosx.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FFA49CD8D6ACE869A47612B1DD80103C /* Release */ = {
+		E5B4DBF25C5A857C26BF66D88B6EE959 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 551AFB13A950AC9F9192AD753F9CC06C /* nmbr.release.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/nmbr";
-				IBSC_MODULE = nmbr;
-				INFOPLIST_FILE = "Target Support Files/nmbr/ResourceBundle-nmbr-nmbr-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nmbr/nmbr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nmbr/nmbr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/nmbr/nmbr.modulemap";
+				PRODUCT_MODULE_NAME = nmbr;
 				PRODUCT_NAME = nmbr;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1467,8 +1469,8 @@
 		00AD71BAD0D0535D213005FE33E41ACA /* Build configuration list for PBXNativeTarget "nmbr-nmbr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				575A095B0922DE0EBFD820B5F72147C1 /* Debug */,
-				FFA49CD8D6ACE869A47612B1DD80103C /* Release */,
+				0A18E05DBC206C6ECD196D71D6A9EC1F /* Debug */,
+				4BE8E0AAF42A1747455FDAF19411B4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1476,8 +1478,8 @@
 		13560D43544F3484EF176E54512E9AFC /* Build configuration list for PBXNativeTarget "nmbr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C4E63481A44FF2B0B980258DB7DB27E /* Debug */,
-				01095B781C0EF76A45501155A88A2CFC /* Release */,
+				E0766E8894C1261D73216005DF4BD3D9 /* Debug */,
+				E5B4DBF25C5A857C26BF66D88B6EE959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1485,8 +1487,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
-				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1494,8 +1496,8 @@
 		530D8E313B9EB9EDE82BE6F46B63E05E /* Build configuration list for PBXNativeTarget "Pods-nmbr_Example-nmbr_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AC58F12B53C709FD6BD90906B6E4FC9 /* Debug */,
-				31911AA4D26E70F9BEE82C9D6164E1A7 /* Release */,
+				7CD5B9EA41E9B37E9C97E5DEE2A2C2DF /* Debug */,
+				683646F7FFA159C93DA3B49990343441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1512,8 +1514,8 @@
 		AF1B6D8B6316E2ED9C0D5A84C0CD0AAB /* Build configuration list for PBXAggregateTarget "icu4c-iosx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1186C5AFF4E670D59155734A6CF9AF8 /* Debug */,
-				C49EC666BE472CA782D4A251ACDB6878 /* Release */,
+				A54BBCCE073DA24F366A62AD9A4CA094 /* Debug */,
+				D839E0575F55DA48BAA5FE72A73B65EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1521,8 +1523,8 @@
 		BC0ED14272813F655452D8DB231A1E85 /* Build configuration list for PBXNativeTarget "Pods-nmbr_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACADC6718A99F790606EA55C3002ECB2 /* Debug */,
-				7064C03BD215F02744022DEAE6ECD03D /* Release */,
+				18152486596397B71BEF1A3007C4597B /* Debug */,
+				112AB6230B19EBB3A63411C0165A19F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

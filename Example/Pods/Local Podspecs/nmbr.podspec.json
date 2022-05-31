@@ -22,7 +22,7 @@
   ],
   "static_framework": true,
   "platforms": {
-    "ios": "9.0"
+    "ios": "14.0"
   },
   "source_files": "nmbr/Classes/**/*",
   "resource_bundles": {
